@@ -1,0 +1,198 @@
+html,body{
+
+    background-color: #212529 !important;
+}
+.box,
+.box1
+{
+height: 30vh;
+/* background-color:white; */
+padding: 10px
+}
+.box{}
+.box1{}
+
+.box2
+{
+    background-color: #6d6d6d;
+    height: 58vh;
+    padding:25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: left;
+}
+.container {
+    max-width: 100%!important;
+}
+.insideBox
+{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+.insideBox:hover
+{
+    transform: rotate3d(1, 1, 1, 45deg);
+    transition: .4s ease-in-out;
+
+
+}
+.firsthalf-rectangle
+{
+    width: auto;
+    height: 15vh;
+    background-color: orangered;
+    display: box;
+    text-align: center;
+    padding: 45px;
+
+}
+
+.firsthalf-rectangle:hover
+{
+    -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+  transition: .4s ease-in-out;
+}
+
+.secondhalf-inside-1
+{
+    width: 100%; 
+    height: 15vh;
+    margin-left: auto;
+    background: #3B5998;
+
+}
+
+.secondhalf-inside-1:hover
+{
+    transform: rotate3d(1, 1, 1, 20deg);
+    transition: .4s ease-in-out;
+}
+
+.secondhalf-inside-2
+{
+    width: 100%;
+    height: 15vh;
+    background: #55ACEE;
+    
+}
+
+.secondhalf-inside-2:hover
+{
+    transform: rotate3d(1, 1, 1, 20deg);
+    transition: .4s ease-in-out;
+}
+
+.secondhalf-inside-3
+{
+    max-width: 100%;
+    height: 15vh;
+    background: #dd4b39;
+    
+}
+
+.secondhalf-inside-3:hover
+{
+    transform: rotate3d(1, 1, 1, 20deg);
+    transition: .4s ease-in-out;
+}
+
+.secondhalf-inside-4
+{
+    width: 100%;
+    height:15vh;
+    margin-right: auto;
+    background: #bb0000;
+}
+
+.secondhalf-inside-4:hover
+{
+    transform: rotate3d(1, 1, 1, 20deg);
+    transition: .4s ease-in-out;
+}
+
+.blue
+{
+    background-color: rgb(0, 145, 202);
+}
+
+.grey
+{
+    background-color: #545454;
+}
+
+.lightgreen
+{
+    background-color: rgb(105, 145, 47);
+}
+
+.insideBox 
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.col
+{
+    font-size: 2.5rem;
+    font-weight: 500;
+	padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+.box2:hover
+{
+    -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+  transition: .4s ease-in-out;
+}
+#txt
+{
+	text-align: center;
+}
+
+.fa {
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .secondhalf > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      border-radius: 10px;
+      transition: .4s ease-in-out;
+  }

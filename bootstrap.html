@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+
+        <script>
+                function startTime() {
+                  var today = new Date();
+                  var h = today.getHours();
+                  var m = today.getMinutes();
+                  var s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =
+                  h + ":" + m + ":" + s;
+                  var t = setTimeout(startTime, 500);
+                }
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+                </script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1>Paweł Ambroziak</h1>
+                    </div>
+                    <div class="col">
+                            <body onload="startTime()">
+                            <div id="txt"></div>
+                    </div>
+                </div>
+        </header>
+
+        <main>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 box">
+                                    <div class="insideBox blue">
+                                        <img class="osoba" src="osoba.png">
+                                        <p>Kim Jestem?</p></div>
+                                </div>
+
+
+                                <div class="col-12 col-md-6 box1">
+                                    <div class="insideBox blue">
+                                            <img class="komputer" src="komputer.png">
+                                        <p>Co Oferuje?</p></div>
+                                </div>
+
+
+
+                                <div class="col-12 col-md-6 box1">
+                                    <div class="insideBox grey">
+                                            <div><img class="teczki" src="teczki.png"></div>
+                                            <p>Curruculum Vitae</p>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-12 col-md-6 box">
+                                    <div class="insideBox lightgreen">
+                                            <img class="teczka" src="teczka.png">
+                                        <p>Kontakt ze mną</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <div class="box2">
+                            <h4>Tytuł podstrony</h4><br /><br />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Vivamus ornare efficitur accumsan. 
+                                    Fusce varius ante at nisl pretium, id lacinia erat dapibus. 
+                                    Vivamus commodo convallis placerat. Sed a vestibulum ipsum. 
+                                    Nulla condimentum aliquam urna sed mollis. Donec et est dignissim, 
+                                    faucibus diam ac, convallis tellus. 
+                                    
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                                    In auctor lectus ut volutpat fermentum. 
+                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                                    per inceptos himenaeos. Maecenas accumsan augue viverra dui eleifend mattis. 
+                                    Cras iaculis in velit id elementum. 
+                                    Praesent semper efficitur justo a viverra.
+                                     Nulla augue augue, interdum sed arcu ac, pretium placerat neque. 
+                                     Praesent sed dolor egestas leo commodo lobortis. 
+                                     Vivamus tincidunt vulputate mauris, id tincidunt enim porta eget.</p>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-6 firsthalf">
+                                <div class="firsthalf-rectangle">
+                                    <i>"Problem ze mną jest taki, że nigdy nie da się powiedzieć, 
+                                    co zepsuję, zanim nie będzie za późno"</i><br />- Martyna Rode</i></div>
+                            </div>
+
+                            <br /><br />
+
+                            <div class="col-md-6 firsthalf">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-3 secondhalf">
+                                            <div class="secondhalf-inside-1">
+                                                <a href="#" class="fa fa-facebook"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 secondhalf">
+                                            <div class="secondhalf-inside-2">
+                                                <a href="#" class="fa fa-twitter"></a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 secondhalf">
+                                            <div class="secondhalf-inside-3">
+                                                <a href="#" class="fa fa-google"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 secondhalf">
+                                            <div class="secondhalf-inside-4">
+                                                <a href="#" class="fa fa-youtube"></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+    </body>
+
+</html>
